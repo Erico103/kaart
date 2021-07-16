@@ -1,0 +1,25 @@
+$primary-color : #c3cfe2;
+$footer-color :#686de0;
+$footer-text :#fff;
+$footer-linkcolor: #b2b5eb;
+$fontsize: 25px;
+
+@mixin paragraph{
+    text-align: left;
+    padding: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+@mixin profilepic{
+    width: 25%;
+    border-radius: 50%;
+    position: absolute;
+    left: 37%;
+    border: 5px solid rgb(233, 221, 221);
+}
+
+@mixin linkstyle{
+    color: $footer-linkcolor;
+    text-decoration: none;
+}

@@ -1,0 +1,83 @@
+@import "partials";
+html{
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: $primary-color;
+    line-height: 1.4;
+    font-size: $fontsize;
+}
+.container__card {
+    display:flex;
+    justify-content: center;
+
+}
+.card {
+    width:500px;
+}
+
+.main__container {
+    height: 400px;
+    background-color: white;
+    display: flex;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0px -1px 5px 0px grey;
+    
+
+    & .main__info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        padding: 20px;
+
+
+    }
+
+    p {
+        @include paragraph;
+
+    }
+}
+
+.profile__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+
+    & .profile__img {
+        @include profilepic;
+    }
+
+}
+
+.footer__name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 240px;
+    background-color: $footer-color;
+    color: $footer-text;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 2px 20px -1px rgb(107, 107, 107);
+
+    ul {
+        list-style: none;
+        text-align: center;
+        padding-right: 10px;
+
+    }
+
+    a {
+        @include linkstyle;
+    }
+}
